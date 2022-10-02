@@ -1,5 +1,7 @@
+import Objects.Sequence;
+
 import java.util.Scanner;
-public class Exercicio02 {
+public class Exercise02 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -8,17 +10,16 @@ public class Exercicio02 {
 
         System.out.println("Informe o segundo número da sequência: ");
         int n2 = input.nextInt();
+        int n3 = 0;
 
-        if(n1>n2){
-            System.out.println("Inversão");
-            for (int i = n2; i <= n1; i++) {
-                System.out.print(i+"|");
-            }
-        }else{
-            for (int k = n1; k <= n2; k++) {
-                System.out.print(k+"|");
-            }
+        if(n2<n1){
+            n3 = n1;
+            n1 = n2;
+            n2 = n3;
         }
+
+        Sequence se = new Sequence(n1,n2);
+        System.out.println(se);
         input.close();
     }
 }

@@ -1,7 +1,7 @@
 import Objects.Person;
 
 import java.util.Scanner;
-public class Exercicio01 {
+public class Exercise01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

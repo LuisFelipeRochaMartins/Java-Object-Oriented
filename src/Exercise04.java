@@ -1,8 +1,7 @@
 import Objects.Salary;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
-public class Exercicio04 {
+public class Exercise04 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -13,6 +12,8 @@ public class Exercicio04 {
 
         System.out.print("Informe quantas horas trabalha por mês: ");
         double time = input.nextDouble();
+
+
 
         Salary folha = new Salary(n,time);
         System.out.println(folha);

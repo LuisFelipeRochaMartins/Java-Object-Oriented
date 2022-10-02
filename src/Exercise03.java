@@ -1,7 +1,7 @@
 import Objects.Calculator;
 
 import java.util.Scanner;
-public class Exercicio03 {
+public class Exercise03 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
