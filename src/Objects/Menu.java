@@ -58,7 +58,6 @@ public class Menu {
         return (soda*f);
     }
     public String bill (int a,int b,int c, int d, int e,int f){
-        double total = 0;
         StringBuilder bill = new StringBuilder();
         bill.append("Cachorro Quente : R$ ").append(valueCachorro(a)+"\n");
         bill.append("Bauru Simples : R$ ").append(valueBauruS(b)+"\n");
