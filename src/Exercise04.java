@@ -1,10 +1,10 @@
 import Objects.Salary;
 
 import java.util.Scanner;
+
 public class Exercise04 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
 
 
         System.out.print("Informe o valor que você ganha por hora: ");
@@ -14,8 +14,7 @@ public class Exercise04 {
         double time = input.nextDouble();
 
 
-
-        Salary folha = new Salary(n,time);
+        Salary folha = new Salary(n, time);
         System.out.println(folha);
         input.close();
     }

@@ -1,6 +1,7 @@
 import Objects.Menu;
 
 import java.util.Scanner;
+
 public class Exercise05 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -14,35 +15,35 @@ public class Exercise05 {
         int n6 = 0;
         boolean run = true;
 
-        while (run){
+        while (run) {
             System.out.println("Quantos cachorros quentes você quer? ");
-            n1+= input.nextInt();
+            n1 += input.nextInt();
 
             System.out.println("Quantos bauru simples você quer? ");
-            n2+= input.nextInt();
+            n2 += input.nextInt();
 
             System.out.println("Quantos bauru com ovo você quer? ");
-            n3+= input.nextInt();
+            n3 += input.nextInt();
 
             System.out.println("Quantos hamburgers você quer? ");
-            n4+= input.nextInt();
+            n4 += input.nextInt();
 
             System.out.println("Quantos chesseburgers você quer? ");
-            n5+= input.nextInt();
+            n5 += input.nextInt();
 
             System.out.println("Quantos refrigerantes você quer? ");
-            n6+= input.nextInt();
+            n6 += input.nextInt();
 
             String opc = input.nextLine();
             System.out.println("Deseja continuar? " +
                     "\nS - Para continuar" +
                     "\nQualquer outra tecla para cancelar");
             opc = input.nextLine();
-            if(!(opc.equalsIgnoreCase("s"))){
+            if (!(opc.equalsIgnoreCase("s"))) {
                 break;
             }
         }
-        System.out.println(conta.bill(n1,n2,n3,n4,n5,n6));
+        System.out.println(conta.billMostrar(n1, n2, n3, n4, n5, n6));
 
 
     }
